@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: fractalfintech.orderbook.OrderbookApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.025 s <<< FAILURE! - in fractalfintech.orderbook.OrderbookApplicationTests
+addNewBidShouldCorrectlyAddNewBid2(fractalfintech.orderbook.OrderbookApplicationTests)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: fractalfintech.orderbook.OrderbookApplication
+Caused by: java.lang.ExceptionInInitializerError
+Caused by: org.springframework.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @11614aef
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @11614aef
+
+contextLoads(fractalfintech.orderbook.OrderbookApplicationTests)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: fractalfintech.orderbook.OrderbookApplication
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
+

@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: fractalfintech.orderbook.MarketControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.919 s <<< FAILURE! - in fractalfintech.orderbook.MarketControllerTest
+addBid(fractalfintech.orderbook.MarketControllerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: fractalfintech.orderbook.OrderbookApplication
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
+
+addOffer(fractalfintech.orderbook.MarketControllerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: fractalfintech.orderbook.OrderbookApplication
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
+
+addMarketItem(fractalfintech.orderbook.MarketControllerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: fractalfintech.orderbook.OrderbookApplication
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
+
+getHello(fractalfintech.orderbook.MarketControllerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Cannot load configuration class: fractalfintech.orderbook.OrderbookApplication
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.cglib.proxy.Enhancer
+
