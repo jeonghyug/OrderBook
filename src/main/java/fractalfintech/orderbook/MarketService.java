@@ -50,11 +50,7 @@ public class MarketService
     	if (orderBooks.containsKey(bid.getName())) {
     		OrderBook book = orderBooks.get(bid.getName());
     		book.addBid(bid.getPrice(), bid.getQty());
-    	} else {
-            OrderBook book = new OrderBook(bid.getName());
-            book.addBid(bid.getPrice(), bid.getQty());
-            orderBooks.put(bid.getName(), book);
-        }
+    	}
     }
 
     public void AddOffer(OrderItemDao offer)
@@ -65,11 +61,7 @@ public class MarketService
     	if (orderBooks.containsKey(offer.getName())) {
     		OrderBook book = orderBooks.get(offer.getName());
     		book.addOffer(offer.getPrice(), offer.getQty());
-    	} else {
-            OrderBook book = new OrderBook(offer.getName());
-            book.addBid(offer.getPrice(), offer.getQty());
-            orderBooks.put(offer.getName(), book);
-        }
+    	}
     }
 
     public Map<Double, List<Order>> GetBidMap(OrderItemDao bid)
